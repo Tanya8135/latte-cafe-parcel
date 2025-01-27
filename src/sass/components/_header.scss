@@ -1,5 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  background-color: $header-bg;
+}
+
 .burgerMenu {
   fill: $bm-btn;
   background-color: transparent;
   border: none;
+  padding: 16px 0;
 }
