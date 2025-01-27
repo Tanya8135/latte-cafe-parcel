@@ -18,10 +18,11 @@
     "url": "https://github.com/Tanya8135/latte-cafe-parcel.git"
   },
   "devDependencies": {
-    "parcel": "^2.11.0"
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3",
+    "sass": "^1.83.4"
   },
   "dependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
     "buffer": "^6.0.3",
     "gsap": "^3.12.5",
     "modern-normalize": "^2.0.0",
