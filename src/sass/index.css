@@ -2,74 +2,76 @@ html {
   scroll-behavior: smooth;
 }
 
-body, button {
-  color: #222;
-  background-color: #fff;
+body,
+button {
+  background-color: #ffffff;
+  color: #222222;
+  font-family: "Roboto Slab", serif;
   margin: 0;
   padding: 0;
-  font-family: Roboto Slab, serif;
   overflow-x: hidden;
 }
 
 img {
-  object-fit: cover;
-  max-width: 100%;
   display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header {
-  background-color: #4a2b33;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  background-color: #4A2B33;
 }
 
 .burgerMenu {
   fill: #c67a88;
-  background-color: #0000;
+  background-color: transparent;
   border: none;
   padding: 16px 0;
 }
 
 .page-header .conteiner {
-  align-items: center;
   display: flex;
+  align-items: center;
 }
 
 .BM-box {
-  flex-flow: column;
-  min-height: 100%;
-  padding-top: 16px;
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-top: 16px;
+  min-height: 100%;
 }
 
 .menu-toggle {
+  min-height: 38px;
+  min-width: 38px;
+  margin: 0;
+  background-color: transparent;
   cursor: none;
-  background-color: #0000;
   border: none;
   border-radius: 50%;
   outline: none;
-  min-width: 38px;
-  min-height: 38px;
-  margin: 0;
 }
-
 .menu-toggle:hover, .menu-toggle:focus {
-  background-color: #0000;
+  background-color: transparent;
 }
 
 .menu-container {
-  z-index: 999;
-  background-color: #fff;
-  width: 100vw;
-  height: 100vh;
-  padding: 15px 10px;
-  transition: transform .25s cubic-bezier(.4, 0, .2, 1);
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 15px 10px;
+  background-color: #ffffff;
+  z-index: 999;
   transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container.is-open {
@@ -77,21 +79,20 @@ img {
 }
 
 .menu-container .menu-toggle {
-  color: #fff;
   position: absolute;
   top: 16px;
   right: 16px;
+  color: #fff;
 }
 
 .price-bm-title {
-  letter-spacing: .05em;
-  text-align: center;
-  padding: 12px 0 24px;
   font-size: 35px;
   font-weight: 300;
+  letter-spacing: 0.05em;
+  padding: 12px 0 24px 0;
+  text-align: center;
 }
-
-@media screen and (width >= 320px) and (width <= 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .price-bm-title {
     font-size: 27px;
   }
@@ -102,136 +103,127 @@ img {
 }
 
 .BM-list {
-  margin: 0 auto;
   padding: 0;
+  margin: 0 auto;
 }
 
 .BM-item {
-  justify-content: space-between;
-  margin: 0 auto 32px;
-  padding: 0 10px;
   display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
-
 .BM-item:last-of-type {
   margin-bottom: 52px;
 }
-
-@media screen and (width >= 320px) and (width <= 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .BM-item:last-of-type {
     margin-bottom: 32px;
   }
 }
 
 .BM-text {
-  letter-spacing: .01em;
-  max-width: 281px;
   font-size: 18px;
   font-weight: 300;
+  letter-spacing: 0.01em;
+  max-width: 281px;
 }
-
-@media screen and (width >= 320px) and (width <= 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .BM-text {
-    max-width: 180px;
     font-size: 14px;
+    max-width: 180px;
   }
 }
 
 .BM-prise {
-  letter-spacing: .01em;
   font-size: 18px;
   font-weight: 300;
+  letter-spacing: 0.01em;
 }
-
-@media screen and (width >= 320px) and (width <= 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .BM-prise {
     font-size: 14px;
   }
 }
 
 .ps-text {
-  letter-spacing: .01em;
-  margin: 0 auto;
   font-size: 16px;
-  font-style: italic;
   font-weight: 400;
+  letter-spacing: 0.01em;
+  margin: 0 auto;
+  font-style: italic;
 }
-
-@media screen and (width >= 320px) and (width <= 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .ps-text {
     font-size: 12px;
   }
 }
 
 .BM-descr {
-  margin-left: 32px;
   display: block;
+  margin-left: 32px;
 }
 
 .price-bm-subtitle {
-  letter-spacing: .05em;
-  margin-bottom: 12px;
   font-size: 25px;
   font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
 }
-
-@media screen and (width >= 320px) and (width <= 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .price-bm-subtitle {
     font-size: 18px;
   }
 }
 
 .BM-item-descr {
-  letter-spacing: .01em;
-  margin-bottom: 8px;
-  margin-left: 16px;
   font-size: 18px;
   font-weight: 300;
+  letter-spacing: 0.01em;
+  margin-left: 16px;
+  margin-bottom: 8px;
 }
-
-@media screen and (width >= 320px) and (width <= 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .BM-item-descr {
     font-size: 14px;
   }
 }
-
 .BM-item-descr:last-child {
   margin-bottom: 20px;
 }
 
 .menuContacts {
+  display: flex;
   flex-direction: column;
   margin: 0;
-  display: flex;
 }
 
 .menuContactsList {
+  display: flex;
   justify-content: space-around;
   padding: 32px 0;
-  display: flex;
 }
 
 .menuContactsLink {
-  letter-spacing: .01em;
   font-size: 20px;
   font-weight: 300;
+  letter-spacing: 0.01em;
   text-decoration: none;
 }
-
-@media screen and (width >= 320px) and (width <= 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .menuContactsLink {
     font-size: 16px;
   }
 }
 
 .address-bm-box {
+  display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 52px;
-  display: flex;
 }
-
-@media screen and (width >= 320px) and (width <= 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .address-bm-box {
     padding-bottom: 32px;
   }
@@ -242,20 +234,19 @@ img {
 }
 
 .address-link-bm {
-  letter-spacing: .03em;
   font-size: 18px;
   font-weight: 400;
+  letter-spacing: 0.03em;
 }
-
-@media screen and (width >= 320px) and (width <= 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .address-link-bm {
     font-size: 14px;
   }
 }
 
 .menuSocial {
-  justify-content: center;
   display: flex;
+  justify-content: center;
 }
 
 .menuSocialList {
@@ -268,14 +259,13 @@ img {
 }
 
 .menuSocialLink {
-  letter-spacing: .01em;
   font-size: 12px;
   font-weight: 300;
+  letter-spacing: 0.01em;
   text-decoration: none;
 }
 
 .menuSocialBorder {
-  border-right: 1px solid #21212133;
-  margin: 0 10px;
-}
-/*# sourceMappingURL=index.b07a87f3.css.map */
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin: 0 10px 0 10px;
+}/*# sourceMappingURL=index.css.map */
