@@ -1,0 +1,179 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body, button {
+  color: #222;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto Slab, serif;
+  overflow-x: hidden;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  background-color: #4a2b33;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  display: flex;
+}
+
+.burgerMenu {
+  fill: #c67a88;
+  background-color: #0000;
+  border: none;
+  padding: 16px 0;
+}
+
+.page-header .conteiner {
+  align-items: center;
+  display: flex;
+}
+
+.BM-box {
+  flex-flow: column;
+  min-height: 100%;
+  padding-top: 16px;
+  display: flex;
+}
+
+.menu-toggle {
+  cursor: none;
+  background-color: #0000;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  min-width: 38px;
+  min-height: 38px;
+  margin: 0;
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+  background-color: #0000;
+}
+
+.menu-container {
+  z-index: 999;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding: 15px 10px;
+  transition: transform .25s cubic-bezier(.4, 0, .2, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  color: #fff;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.price-bm-title {
+  text-align: center;
+  padding: 12px 0 24px;
+}
+
+.BM {
+  display: block;
+}
+
+.BM-list {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.BM-item {
+  justify-content: space-between;
+  margin: 0 auto 32px;
+  padding: 0 10px;
+  display: flex;
+}
+
+.BM-item:last-of-type {
+  margin-bottom: 52px;
+}
+
+.ps-text {
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.BM-descr {
+  margin-left: 32px;
+  display: block;
+}
+
+.BM-item-descr {
+  margin-bottom: 8px;
+  margin-left: 16px;
+}
+
+.BM-item-descr:last-child {
+  margin-bottom: 20px;
+}
+
+.menuContacts {
+  flex-direction: column;
+  margin: 0;
+  display: flex;
+}
+
+.menuContactsList {
+  justify-content: space-around;
+  padding: 32px 0;
+  display: flex;
+}
+
+.menuContactsLink {
+  text-decoration: none;
+}
+
+.address-bm-box {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 52px;
+  display: flex;
+}
+
+.map-bm {
+  padding: 10px 10px 10px 0;
+}
+
+.menuSocial {
+  justify-content: center;
+  display: flex;
+}
+
+.menuSocialList {
+  padding: 0;
+  list-style: none;
+}
+
+.menuSocialItem {
+  display: inline-flex;
+}
+
+.menuSocialLink {
+  text-decoration: none;
+}
+
+.menuSocialBorder {
+  border-right: 1px solid #21212133;
+  margin: 0 10px;
+}
+/*# sourceMappingURL=index.b07a87f3.css.map */

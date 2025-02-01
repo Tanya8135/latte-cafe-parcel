@@ -1,9 +1,9 @@
 .price-bm-title {
-  @include mobile {
-    font-size: 27px;
-  }
+  // @include mobile {
+  //   font-size: 27px;
+  // }
 
-  @include font(35px, 300, 0.05em);
+  // @include font(35px, 300, 0.05em);
   padding: 12px 0 24px 0;
   text-align: center;
 }
@@ -33,31 +33,31 @@
   margin-bottom: 32px;
 
   &:last-of-type {
-    @include mobile {
-      margin-bottom: 32px;
-    }
+    // @include mobile {
+    //   margin-bottom: 32px;
+    // }
 
     margin-bottom: 52px;
   }
 }
 
-.BM-text {
-  @include font(18px, 300, 0.01em);
-  max-width: 281px;
-  @include mobile {
-    font-size: 14px;
-    max-width: 180px;
-  }
-}
+// .BM-text {
+//   @include font(18px, 300, 0.01em);
+//   max-width: 281px;
+//   @include mobile {
+//     font-size: 14px;
+//     max-width: 180px;
+//   }
+// }
 
-.BM-prise {
-  @include mobile {
-    font-size: 14px;
-  }
+// .BM-prise {
+//   @include mobile {
+//     font-size: 14px;
+//   }
 
-  @include font(18px, 300, 0.01em);
-  // margin-left: 20px;
-}
+//   @include font(18px, 300, 0.01em);
+//   // margin-left: 20px;
+// }
 
 // .BM-item-center {
 //   display: flex;
@@ -65,11 +65,11 @@
 // }
 
 .ps-text {
-  @include mobile {
-    font-size: 12px;
-  }
+  // @include mobile {
+  //   font-size: 12px;
+  // }
 
-  @include font(16px, 400, 0.01em);
+  // @include font(16px, 400, 0.01em);
 
   margin: 0 auto;
   font-style: italic;
@@ -80,21 +80,21 @@
   margin-left: 32px;
 }
 
-.price-bm-subtitle {
-  @include mobile {
-    font-size: 18px;
-  }
+// .price-bm-subtitle {
+//   @include mobile {
+//     font-size: 18px;
+//   }
 
-  @include font(25px, 300, 0.05em);
-  margin-bottom: 12px;
-}
+//   @include font(25px, 300, 0.05em);
+//   margin-bottom: 12px;
+// }
 
 .BM-item-descr {
-  @include mobile {
-    font-size: 14px;
-  }
+  // @include mobile {
+  //   font-size: 14px;
+  // }
 
-  @include font(18px, 300, 0.01em);
+  // @include font(18px, 300, 0.01em);
   margin-left: 16px;
   margin-bottom: 8px;
   &:last-child {
@@ -126,19 +126,19 @@
 // }
 
 .menuContactsLink {
-  @include mobile {
-    font-size: 16px;
-  }
+  // @include mobile {
+  //   font-size: 16px;
+  // }
 
-  @include font(20px, 300, 0.01em);
+  // @include font(20px, 300, 0.01em);
 //   color: $secondary-color;
   text-decoration: none;
 }
 
 .address-bm-box {
-  @include mobile {
-    padding-bottom: 32px;
-  }
+  // @include mobile {
+  //   padding-bottom: 32px;
+  // }
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,13 +157,13 @@
 //   }
 // }
 
-.address-link-bm {
-  @include mobile {
-    font-size: 14px;
-  }
+// .address-link-bm {
+//   // @include mobile {
+//   //   font-size: 14px;
+//   // }
 
-  @include font(18px, 400, 0.03em);
-}
+//   @include font(18px, 400, 0.03em);
+// }
 
 .menuSocial {
   display: flex;
@@ -180,7 +180,7 @@
 }
 
 .menuSocialLink {
-  @include font(12px, 300, 0.01em);
+  // @include font(12px, 300, 0.01em);
 
 //   color: $secondary-color;
   text-decoration: none;
